@@ -1,0 +1,56 @@
+-- in.cue --
+import "list"
+
+issue563: {
+	#MyDef: {
+		name: string
+		...
+	}
+
+	_all: [
+		_a,
+		_b,
+	]
+
+	_a: [...#MyDef] & [
+		{name: "a"},
+		{name: "b"},
+		{name: "c"},
+	]
+
+	_b: [...#MyDef] & [
+		{name: "1"},
+		{name: "2"},
+		{name: "3"},
+	]
+
+	output: [...#MyDef] & list.FlattenN(_all, 1)
+}
+issue1404: {
+	a:   *1 | 2
+	sum: list.Sum([a])
+}
+-- out/list --
+issue563: {
+	#MyDef: {
+		name: string
+	}
+	output: [{
+		name: "a"
+	}, {
+		name: "b"
+	}, {
+		name: "c"
+	}, {
+		name: "1"
+	}, {
+		name: "2"
+	}, {
+		name: "3"
+	}]
+}
+issue1404: {
+	a:   *1 | 2
+	sum: 1
+}
+

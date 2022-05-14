@@ -1,31 +1,19 @@
-# Basic tutorial for learning CUE
+## Introduction
 
-This is a mostly empty template. To create your own first scenario, duplicate this in your own repo, then modify it as needed.
+Welcome to this tutorial for CUE, the configuration language that aims to make data formats such as JSON and YAML easier to work with. JSON is easy for machines to process, but it is a hassle for humans to deal with. YAML has the opposite problem, and CUE is an alternative that aims to combine the strengths of both. CUE can read all JSON and YAML, and represent them, while the other way around is not true. It can also export files in all the three formats, CUE, JSON and YAML.
 
-## Description
 
-2-3 sentences on what the scenario covers, illustrates, and teaches. What technology is used, and what task will the learner have accomplished by the end?
+## Intended Learning Outcomes
 
-Importantly, why does this matter? What can this technology, tool, or approach help you accomplish? Briefly communicate the real-world application(s) of this skill.
+This tutorial is intended to teach the basics of the CUE configuration language that will open up people to using and learning more about it.
 
-## Learning Objective
-
-- 3-4 bullets
-- of what you
-- will learn
+You will learn the following in this tutorial:
+- 1
+- 2
+- ...
 
 ## Prerequisite Skills
 
-Define the target audience here, and list any prerequisite skills. For example:
-
-This is for software developers with prior experience using Jenkins to deploy web applications.
-
-## Table of Contents
-
-If the scenario is part of a set of related scenarios, the table of contents will appear here as a bulleted list of all the scenario titles, with links to each other.
-
-- Scenario A
-- Scenario B
-- Scenario C
-
-
+This tutorial is aimed at people with some experience with programming and it is recommended to be somewhat familiar with the following:
+- Bash
+- JSON or YAML

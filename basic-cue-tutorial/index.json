@@ -6,11 +6,11 @@
   "details": {
     "steps": [
       {
-        "title": "Installation",
+        "title": "Getting Started",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Exporting CUE files",
         "text": "step2.md"
       },
       {

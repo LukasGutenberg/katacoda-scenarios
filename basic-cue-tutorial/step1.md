@@ -1,7 +1,7 @@
 # Importing JSON an YAML files
 
 CUE is capable of importing both JSON and YAML files, among others, and converts them to CUE files. 
-There is a multitude of different settings available when importing, if you are futher interested try writing `cue import --help`{{execute}}
+There is a multitude of different settings available when importing, if you are further interested try writing `cue import --help`{{execute}}
 
 ## Step 1: Importing JSON files
 

@@ -23,3 +23,7 @@ And finally, to install CUE we will install it using our recently installed Go b
 CUE should now be installed and ready to be used in the terminal. Try using cue in the bash shell for some information:
 
 `cue`{{execute}}
+
+Now, try to export the example CUE file:
+
+`cue export example.cue`{{execute}}

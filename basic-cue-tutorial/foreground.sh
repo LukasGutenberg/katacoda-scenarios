@@ -1,5 +1,5 @@
 #/bin/bash
-printf "wait until the file explorer stops updating before you begin running commands!"
+echo "wait until the file explorer stops updating before you begin running commands!\n"
 
 # 'This is a bash shell script.\n\n'
 # 'Any commands you put in here will be executed at runtime.\n\n'

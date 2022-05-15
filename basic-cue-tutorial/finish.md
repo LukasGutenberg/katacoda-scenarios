@@ -1,20 +1,16 @@
 
-On the finish page, summarize what was just learned:
+Now that you have completed this tutorial, you have learned the following:
 
-- 3-4 bullets
-- of what you just
-- did and learned
+- Some background information about CUE, and why it is useful
+- How to import a JSON as well as a YAML file into CUE for further editing
+- Ways to implement data restrictions and limiting boilerplate in CUE by using basic functions
+- Exporting CUE files as JSON and YAML
 
-## Table of Contents
-
-If the scenario is part of a set of related scenarios, the table of contents will appear here as a bulleted list of all the scenario titles, with links to each other.
-
-- Scenario A
-- Scenario B
-- Scenario C
+We hope you enjoyed the tutorial and it piqued your interest in CUE!
 
 ## Further Learning
 
-You could link to other learning resources here. What is a good next step for a learner who just completed this scenario?
+If you would like to find out more about CUE, you can find more in-depth guides in the official CUE documentation that will also teach you about CUE tooling in the context of Kubernetes configurations.
 
-
+They can be found in the following link:
+https://cuelang.org/docs/tutorials/

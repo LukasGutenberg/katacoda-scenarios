@@ -6,7 +6,7 @@ CUE is able to export both JSON and YAML files. Using CUE is helpful for managin
 
 ## Intended Learning Outcomes
 
-This tutorial is intended to teach the basics of the CUE configuration language that will hopefully open up people to using and learning more about it and its strengths.
+This tutorial is intended to teach the basics of the CUE configuration language and some of its strengths that will hopefully open up people to using and learning more about it.
 
 You will learn the following in this tutorial:
 1. Importing a JSON or YAML file into a CUE file that is ready for editing.

@@ -21,4 +21,5 @@ This tutorial is aimed at people with some experience with programming and it is
 - YAML
 
 ## About this tutorial
+
 The tutorial will install CUE in the background when you start it, but it can take some time, so wait with any commands until the file explorer stops updating.

@@ -8,12 +8,16 @@ Welcome to this tutorial for CUE, the configuration language that aims to make d
 This tutorial is intended to teach the basics of the CUE configuration language that will open up people to using and learning more about it.
 
 You will learn the following in this tutorial:
-- 1
-- 2
-- ...
+1. How to import a JSON or YAML file into a CUE file that is ready for editing.
+2. How to use basic functions in a CUE file to implement data restrictions and limiting boilerplate.
+3. How to export a CUE file into either a JSON or a YAML file.
 
 ## Recommended Prerequisite Skills
 
 This tutorial is aimed at people with some experience with programming and it is recommended to be somewhat familiar with the following:
 - Bash
-- JSON or YAML
+- JSON
+- YAML (not necessary)
+
+## About this tutorial
+The tutorial will install CUE in the background when you start it, but it can take some time so wait with any commands until the file explorer stops updating.

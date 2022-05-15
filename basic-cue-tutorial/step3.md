@@ -1,6 +1,6 @@
 # Exporting as JSON or YAML
 
-One of the biggest benefits of using CUE is that it is cleaner and more readable than JSON and YAML, but it also allows for exporting into both respective formats.
+One of the biggest benefits of using CUE is that it is cleaner and more readable than JSON and YAML, but also that it allows for exporting as both formats.
 
 ## Exporting a CUE file as JSON
 

@@ -1,8 +1,8 @@
-# Heading for Step 2
+# CUE is a superset of JSON
 
-This is some text.
+CUE can read and represent all of JSON, using CUE allows you to also export in JSON. With this environment there is also an example cue file provided.
 
-Here's a single line of runnable code:
+## Exporting example file as JSON
+By default, CUE exports in JSON data format. You can export a CUE file with the following command:
 
-`printf 'Jello, world!\n\n'`{{execute}}
-
+`cue export example.cue'`{{execute}}

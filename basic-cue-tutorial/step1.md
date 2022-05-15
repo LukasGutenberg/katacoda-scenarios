@@ -16,6 +16,5 @@ Importing YAML files is just as "_difficult_" as importing JSON files: `cue impo
 Notice however that CUE skipped the import this time, this happened due to the import\_example.cue file already existing, and can be best avoided by using a good naming convention and not naming your files the same thing. Two other solutions would be to use the flag _-f_ to forcibly overwrite the file or to use the flag _-o \[string\]_ to manually name the file, try it now. `cue import import_example.yml -o import_example2.cue`{{execute}}
 
 
-\
-\
+
 Now you know the basics on how to import files to CUE!

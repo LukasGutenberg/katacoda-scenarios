@@ -1,6 +1,17 @@
-# Installation of Go and CUE
+# Importing JSON an YAML files
 
-There is more than one way to install CUE, in this tutorial we will install it for our Ubuntu environment from source by making use of Go binaries.
+CUE is capable of importing both JSON and YAML files, among others, and converts them to CUE files. 
+There is a multitude of different settings available when importing, if you are futher interested try writing `cue import --help`{{execute}}
+
+## Step 1: Importing the JSON file
+
+This is just as easy as it looks, simply write `cue import import_example.json`{{execute}} and a CUE file will be created.
+
+If you open the .cue file and compare it to the .json file you will see that there is no large difference between the files. This 
+
+
+field names 
+
 
 ## Step 1: Download Go binaries
 First we will download the go binaries, by running the following command in the terminal:

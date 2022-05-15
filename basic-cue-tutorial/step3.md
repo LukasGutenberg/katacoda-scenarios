@@ -1,8 +1,25 @@
-# Heading for Step 3
+# Exporting as JSON or YAML
 
-This is some text.
+One of the biggest benefits of using CUE is that it is cleaner and more readable than JSON and YAML, but it also allows for exporting into both respective formats.
 
-Here's a single line of runnable code:
+## Exporting a CUE file as JSON
 
-`printf 'Cello, world!\n\n'`{{execute}}
+By default, running the cue export command will export the CUE file in a JSON format. Try running to following command to test it out:
 
+`cue export example.cue`{{execute}}
+
+## Exporting a CUE file as YAML
+
+If you would like to export your CUE file as YAML instead, you need to specify it like in the following example:
+
+`cue export example.cue --out=yaml`{{execute}}
+
+## More information
+
+For more information about the different ways CUE can export, you can run the following commands:
+
+`cue export --help`{{execute}}
+
+and
+
+`cue filetypes`{{execute}}

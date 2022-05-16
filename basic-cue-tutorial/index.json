@@ -1,8 +1,8 @@
 {
   "title": "Learning the basics of CUE",
-  "description": "A simple scenario example.",
+  "description": "A simple scenario for teaching the basics of CUE.",
   "difficulty": "Beginner",
-  "time": "3 minutes",
+  "time": "15 minutes",
   "details": {
     "steps": [
       {
@@ -10,11 +10,11 @@
         "text": "step1.md"
       },
       {
-        "title": "Exporting CUE files",
+        "title": "Learning the basic tools of CUE",
         "text": "step2.md"
       },
       {
-        "title": "Step 3",
+        "title": "Exporting CUE files",
         "text": "step3.md"
       }
     ],

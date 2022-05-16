@@ -1,6 +1,6 @@
 # Learning the basic tools of CUE
 
-Here you will learn the foundations of writing a CUE file and how we can restrict our data. Begin by opening the empty file _constrained\_data.cue_ in the examples folder and we can begin writing.
+Here you will learn the foundations of writing a CUE file and how we can restrict our data. Begin by opening the empty file _constrained\_data.cue_ in the examples folder and we can get started.
 
 
 ## Create your recipe
@@ -12,9 +12,9 @@ Schemas are written as Definitions in CUE. A definition has an identifier which 
   It is because normally, having _ in the beginning of a field name prevents it from being output, and the case where you combine them is taken into consideration.
 </details>
 
-<br/>
+A definition can be thought of as a "closed" blueprint or recipe for structs, which is essentially a JSON object consisting of allowed fields.
 
-A definition can be thought of as a "closed" blueprint or recipe for structs, which is essentially a JSON object consisting of allowed fields. As a practice exercise, try creating your own definition in _constrained_data.cue_
+Try creating your own definition in _constrained\_data.cue_
 
 ```
 #Human: {
@@ -25,7 +25,9 @@ A definition can be thought of as a "closed" blueprint or recipe for structs, wh
     actions:      {...} 
 }
 ```
-We then create a struct, which is similar to a JSON object, and use a conjunction '&' to bind our data to our definition. Note that we can have a comma after the final element in the list, this is simply ignored by CUE and not having one produces the same behaviour.
+
+## Bake your cookies
+We then create a struct, which is similar to a JSON object, and use a conjunction '&' to bind our data to our definition. Note that we can have a comma after the final element in the list, this is simply ignored by CUE.
 
 ```
 human: #Human & {
@@ -40,12 +42,17 @@ human: #Human & {
 }
 ```
 We can now run this file with CUE and get a JSON as an output, try it now:
+
 `cue export examples/constrained_data.cue`{{execute}}
 
 Experiment with what happens if you change a value to the wrong type, did you get an error message?
 
+<details>
+  <summary>What is ...?</summary>
+  
+  The reason why we put "closed" in quotes for explaining what a definition is, is that it is not always closed. In the example above, you may wonder what the `...` means. When you put `...` you are telling CUE that you want the struct to be able to accept more inputs, for example if we try to add another field inside _human_ we will get an error due to _#Human_ not having `...` in its final row.
 
-The reason why we put "closed" in quotes for explaining what a definition is, is that it is not always closed. In the example above, you may wonder what the `...` means. When you put `...` you are telling CUE that you want the struct to be able to accept more inputs, for example if we try to add another field indside _human_ we will get an error due to _#Human_ not having `...` in its final row.
+</details>
 
 ## Place restrictions on your ingredients
 

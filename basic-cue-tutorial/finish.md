@@ -3,7 +3,7 @@ Now that you have completed this tutorial, you have learned the following:
 
 - Some background information about CUE, and why it is useful
 - How to import a JSON as well as a YAML file into CUE for further editing
-- Ways to implement data restrictions and limiting boilerplate in CUE by using basic functions
+- Ways to implement data restrictions in CUE by using basic functions
 - Exporting CUE files as JSON and YAML
 
 We hope you enjoyed the tutorial and it piqued your interest in CUE!

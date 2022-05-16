@@ -1,22 +1,18 @@
 # Learning the basic tools of CUE
 
-Here you will learn the foundations of writing a CUE file and how we can restrict our data. Begin by opening the empty file _constrained\_data.cue_ and we can begin writing.
-
-## Packages and imports
-
-CUE supports packaging and imports, this is not something that we will go into depth with here and if you want to know more you can look at the CUE documentation. 
-
-Write in our file:
-```
-package examples
-
-import "list"
-```
+Here you will learn the foundations of writing a CUE file and how we can restrict our data. Begin by opening the empty file _constrained\_data.cue_ in the examples folder and we can begin writing.
 
 
 ## Create your recipe
 
 Schemas are written as Definitions in CUE. A definition has an identifier which starts with `#` or `_#`. These characters tell CUE that it is used for validation and should not be output as data.
+<details>
+  <summary>Why would they have two ways of doing it, you may wonder?</summary>
+  
+  It is because normally, having _ in the beginning of a field name prevents it from being output, and the case where you combine them is taken into consideration.
+</details>
+
+<br/>
 
 A definition can be thought of as a "closed" blueprint or recipe for structs, which is essentially a JSON object consisting of allowed fields. As a practice exercise, try creating your own definition in _constrained_data.cue_
 
@@ -59,7 +55,7 @@ This makes it so that we can restrict both how our configuration file is structu
 We do this by adding further definitions and chaining them together, add this between your struct and definition:
 
 ```
-#Constraints: #Schema & {
+#Constraints: #Human & {
     name:       =~"[a-z]+"
     height:     >0 | 170
     friends:    list.MaxItems(5)
@@ -67,9 +63,13 @@ We do this by adding further definitions and chaining them together, add this be
 ```
 We also need to change our struct and replace _#Human_ with _#Constraints_.
 
+CUE supports packaging and imports, this is not something that we will go into depth with here and if you want to know more you can look at the CUE documentation. We do however need to import the _list_ package to implement these constraints.
+```
+import "list"
+```
+
 These constraints can be quite versatile, allowing for example regular expressions, default values with `|`, and mathematical expressions. Play around and see what you can do!
 `cue export examples/constrained_data.cue`{{execute}}
-
 
 ## Summary
 
@@ -78,11 +78,4 @@ As this part of the tutorial is pretty long we will make a short summary of what
 - In CUE you can create definitions as recipes that your structs will have to adhere to.
 - When creating your struct, which is similar to a JSON object, you can specify for it to adhere to your definition.
 - You can also create constraints or restrictions on which data is allowed in your structs.
-
-
-
-
-Constraints can not only be applied to CUE data, but also to JSON and YAML using cue vet.
-
-Constraints in CUE can also reduce boilerplate, which is a section of code that is reused in many places with little alteration.
 
